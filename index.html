@@ -10,75 +10,7 @@
 
 <body>
 
-<div class="container">
-  <div class="row">
-    <h1>Some stats about communication sentiment</h1>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-4 mb-3">
-      <div class="card">
-        <div class="card-header">Average sentiment</div>
-        <div class="card-body">
-          <p class="card-text" id="avgSentiment"><span class="lds-circle"><span></span></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 mb-3">
-      <div class="card">
-        <div class="card-header">Number of messages</div>
-        <div class="card-body">
-          <p class="card-text" id="totalMsgs"><span class="lds-circle"><span></span></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 mb-3">
-      <div class="card">
-        <div class="card-header">Average sentiment for unique messages</div>
-        <div class="card-body">
-          <p class="card-text" id="avgUniqueMsgs"><span class="lds-circle"><span></span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-4 mb-3">
-      <div class="card">
-        <div class="card-header">Messages with sentiment greater than 0.6</div>
-        <div class="card-body">
-          <p class="card-text" id="msgSentimentGt06"><span class="lds-circle"><span></span></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 mb-3">
-      <div class="card">
-        <div class="card-header">Messages with sentiment between 0.6 and 0</div>
-        <div class="card-body">
-          <p class="card-text" id="msgSentiment06to0"><span class="lds-circle"><span></span></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 mb-3">
-      <div class="card">
-        <div class="card-header">Messages with sentiment lower than 0</div>
-        <div class="card-body">
-          <p class="card-text" id="msgSentimentLt0"><span class="lds-circle"><span></span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12 mb-3">
-      <div class="card">
-        <div class="card-header">Sentiment distribution</div>
-        <div class="card-img-top"><canvas id="sentimentDistributionsLine"></canvas></div>
-      </div>
-    </div>
-  </div>
-
-</div>
+<div class="container" id="container"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
